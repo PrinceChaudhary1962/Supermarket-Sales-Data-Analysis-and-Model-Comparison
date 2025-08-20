@@ -7,6 +7,12 @@ import re
 import difflib
 import traceback
 
+# Load your CSV
+df = pd.read_csv("SuperMarket Analysis.csv")
+
+# Show the exact column names from your dataset
+st.write("🔍 Columns in your dataset:", df.columns.tolist())
+
 st.set_page_config(layout="wide")
 st.title("📊 Supermarket Sales Data Analysis — Robust Plotting")
 
